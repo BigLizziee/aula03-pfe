@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+:root {
+    --c1: #3E2723;  /* Marrom escuro para textos principais */
+    --c2: #5D4037;  /* Marrom médio para textos secundários */
+    --c3: #8D6E63;  /* Marrom claro para bordas */
+    --c4: #FFF;  /* Branco para fundo */
+    --primary-bg: #F9F1E7;  /* Bege claro para o fundo */
+    --header-bg: #6B4F3C;  /* Marrom escuro para o cabeçalho */
+    --button-bg: #7A4B3A;  /* Marrom quente para os botões */
+    --button-hover-bg: #4E3629;  /* Marrom escuro para hover */
+    --border-radius: 8px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-bg);
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: var(--header-bg);
+    padding: 20px 0;
+    color: var(--c4);
+    border-radius: var(--border-radius);
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid var(--c3);
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    width: 100%;
+    margin: 5px 0;
+    background-color: var(--c4);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    color: #c99f90;
+    background-color:#792529;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+}
+
+button[type="reset"] {
+    margin-top: 5px;
+    background-color: #792529; /* Vermelho para o botão de reset */
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--c3);
+}
+
+table th {
+    background-color: var(--header-bg);
+    color: var(--c4);
+}
+
+table tbody tr:hover {
+    background-color: var(--c3);
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--c2);
+}
+
+
